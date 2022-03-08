@@ -12,7 +12,7 @@ object agecalc extends App {
   val name = readLine("what is your name?")
 
   println(s"HI great, $name !")
-  val age = readLine("how old are you").toDouble
+  val age = readLine("how old are you").toInt
   println(s"cool, you are $age year old !!")
   val age100 = year - age + targetage
   val smiley = "😀"
