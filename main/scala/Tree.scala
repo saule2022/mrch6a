@@ -37,7 +37,7 @@ object Tree extends App {
   var n = 0
   println(" " * height + "*")
   while (i < height - 1) {
-    for (c <- name) {
+    for (c <- name.toUpperCase()) {
       if (i == height - 1) break
       else {
         number = number + 2
