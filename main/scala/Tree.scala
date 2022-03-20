@@ -32,40 +32,38 @@ object Tree extends App {
     var number = 1
     var i = 0
     var n = 0
-    if (height == maximumHeight) {
-      val height = maximumHeight
+    if (height > maximumHeight) {
+      println("Can not build taller than 40 Tree!")
     } else {
       println(" " * height + symbol)
       while (i < height - 1) {
         for (c <- name.toUpperCase()) {
           if (i == height - 1) break
+
           else {
             number = number + 2
             n = n + 1
-
             println(" " * (height - n) + c.toString * number)
           }
           i = i + 1
         }
       }
     }
-    println(printTree(name = Valdis, 10, '*', 40))
-
-
-
-
-
-    //val name = readLine("Please enter your name:\n")
-    // val Range = readLine("How many layer do you a tree?").toInt
-    //var number = -1
-    //var x = 1
-
-
-    //for (x <- 1 to Range) {
-    //number = number + 2
-    //Ra=" " *(Range-x)
-
-    //println(" " * (Range - x) + "+" * number)
-
-    //}
   }
+
+  println(printTree(name = "Valdis", 39, '*', 40))
+
+}
+//val name = readLine("Please enter your name:\n")
+// val Range = readLine("How many layer do you a tree?").toInt
+//var number = -1
+//var x = 1
+
+
+//for (x <- 1 to Range) {
+//number = number + 2
+//Ra=" " *(Range-x)
+
+//println(" " * (Range - x) + "+" * number)
+
+//}
