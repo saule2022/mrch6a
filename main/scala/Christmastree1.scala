@@ -17,5 +17,4 @@ object Christmastree1 extends App {
     number = number + 2
     println(" " * (Range - x) + "+" * number)
   }
-
 }
