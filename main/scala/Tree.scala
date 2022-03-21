@@ -43,4 +43,5 @@ object Tree extends App {
     }
   }
   println(printTree(name = "Valdis", 39, '*', 40))
+
 }
