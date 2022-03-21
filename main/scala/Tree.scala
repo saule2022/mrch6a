@@ -1,13 +1,6 @@
 import scala.util.control.Breaks.break
 object Tree extends App {
-  //TODO ask person's name
-  //TODO ask for tree height
-  //TODO print a xmas tree (or another tree) by calling printTree function with the correct parameters
-  //tree height should be the one assigned
-  //simple version for height 3 would be
-  //  *
-  // ***
-  //*****
+ //   ***************************************************
   //for full points I would like to see the following
   //if user enters name Valdis  and height 9
   //then we should print
@@ -39,7 +32,6 @@ object Tree extends App {
       while (i < height - 1) {
         for (c <- name.toUpperCase()) {
           if (i == height - 1) break
-
           else {
             number = number + 2
             n = n + 1
@@ -50,20 +42,5 @@ object Tree extends App {
       }
     }
   }
-
   println(printTree(name = "Valdis", 39, '*', 40))
-
 }
-//val name = readLine("Please enter your name:\n")
-// val Range = readLine("How many layer do you a tree?").toInt
-//var number = -1
-//var x = 1
-
-
-//for (x <- 1 to Range) {
-//number = number + 2
-//Ra=" " *(Range-x)
-
-//println(" " * (Range - x) + "+" * number)
-
-//}
