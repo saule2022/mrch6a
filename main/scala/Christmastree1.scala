@@ -10,7 +10,7 @@ object Christmastree1 extends App {
   // ***
   //*****
   val name = readLine("Please enter your name:\n")
-  val Range = readLine("How many layer do you a tree?").toInt
+  val Range = readLine("How many layers do you want in a tree?").toInt
   var number = -1
   var x = 1
   for (x <- 1 to Range) {
