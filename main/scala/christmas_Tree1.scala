@@ -1,5 +1,4 @@
 import scala.io.StdIn.readLine
-
 object Christmas_Tree1 extends App {
   //TODO ask person's name
   //TODO ask for tree height
