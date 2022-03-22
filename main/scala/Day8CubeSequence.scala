@@ -14,5 +14,9 @@ object Day8CubeSequence extends App {
     val mySquare = n * n * n
     cleanBuffer += mySquare
   }
+
+  //val cubes= for (n <- number to endNumber)yield Math.pow(n,3).toInt  <----gives vector
+
+
   println(cleanBuffer)
 }
