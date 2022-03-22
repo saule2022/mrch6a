@@ -11,12 +11,13 @@ object Day8CubeSequence extends App {
   val endNumber = readLine("please enter end number").toInt
   val cleanBuffer = scala.collection.mutable.ArrayBuffer[Int]()
   for (n <- number to endNumber) {
-    val mySquare = n * n * n
-    cleanBuffer += mySquare
+    val myCubes = n * n * n
+    cleanBuffer += myCubes
   }
+  val oddCubes = for (cleanBuffer <- cleanBuffer if cleanBuffer % 2 == 1) yield cleanBuffer
+
 
   //val cubes= for (n <- number to endNumber)yield Math.pow(n,3).toInt  <----gives vector
-
-
   println(cleanBuffer)
+  println(oddCubes)
 }
