@@ -1,6 +1,4 @@
 
-
-
 object Day11ExercisePangram extends App {
 
   val myTestText = "The five boxing wizards jump quickly"
