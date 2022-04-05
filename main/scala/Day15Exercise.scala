@@ -12,11 +12,9 @@ object Day15Exercise extends App {
     }
   }
 
-  def getDayType(day: String): String = {
-    day match {
-      case "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday" => println("WorDay !")
-      case "Saturday" | "Sunday" => println("Weekend !")
-    }
+  def getDayType(day: String): String = day match {
+    case "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday" => "WorkDay !"
+    case "Saturday" | "Sunday" => "Weekend !"
   }
 
   println(getDayType("Monday"))
